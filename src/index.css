@@ -1,13 +1,51 @@
+@import url('./assets/fonts/roboto.css');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  background: var(--website-bg);
+  color: var(--text-color);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  font-family: 'Roboto', sans-serif;
+  color: var(--text-color);
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --website-bg: linear-gradient(180deg, #4568DC 0%, #B06AB3 100%), #EF8E48;
+  --container-bg: #FFF;
+  --text-color: #000;
+  --text-color-opacity: rgba(0, 0, 0, 0.64);
+  --border-color: #DDD;
+  --active-color: #FFD205;
 }

@@ -1,0 +1,24 @@
+.app {
+  width: 100%;
+  min-width: 320px;
+  max-width: 1280px;
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding: 17px 12px;
+  margin: 0 auto;
+}
+
+.app__content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(296px, 1fr));
+  align-items: start;
+  justify-items: center;
+  gap: 17px;
+}
+
+@media screen and (min-width: 900px) {
+  .app {
+    padding: 32px;
+  }
+}
